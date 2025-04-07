@@ -1,0 +1,427 @@
+DEBUG - 2025-03-22 08:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 08:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-22 08:38:59 --> ErrorException: [Creation Error] An error occurred while instantiating the annotation @OA\Info declared on C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 18: "Ignoring unexpected property "Title" for @OA\Info(), expecting "x", "title", "description", "termsOfService", "contact", "license", "version" in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 18".; file=C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php
+[Method: GET, Route: download-Swagger]
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, '[Creation Error] An error occurred while instantiating the annotation @OA\\Info declared on C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18: "Ignoring unexpected property "Title" for @OA\\Info(), expecting "x", "title", "description", "termsOfService", "contact", "license", "version" in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', 'C:\\xampp\\htdocs\\ci_shield-Api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 23)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(23): trigger_error('[Creation Error] An error occurred while instantiating the annotation @OA\\Info declared on C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18: "Ignoring unexpected property "Title" for @OA\\Info(), expecting "x", "title", "description", "termsOfService", "contact", "license", "version" in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', 512)
+ 3 VENDORPATH\psr\log\src\LoggerTrait.php(50): OpenApi\Loggers\DefaultLogger->log('error', '[Creation Error] An error occurred while instantiating the annotation @OA\\Info declared on C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18: "Ignoring unexpected property "Title" for @OA\\Info(), expecting "x", "title", "description", "termsOfService", "contact", "license", "version" in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', [...])
+ 4 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockParser.php(78): Psr\Log\AbstractLogger->error('[Creation Error] An error occurred while instantiating the annotation @OA\\Info declared on C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18: "Ignoring unexpected property "Title" for @OA\\Info(), expecting "x", "title", "description", "termsOfService", "contact", "license", "version" in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', [...])
+ 5 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockAnnotationFactory.php(58): OpenApi\Analysers\DocBlockParser->fromComment('/**
+ * @OA\\Info(
+ *      Title="Shield v4 Api Docs",
+ *      version="1.0.0",
+ *      description="Api regarding Register,Login,Profile & Logout User"
+ * )
+ */', Object(OpenApi\Context))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(122): OpenApi\Analysers\DocBlockAnnotationFactory->build(Object(ReflectionClass), Object(OpenApi\Context))
+ 7 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(61): OpenApi\Analysers\ReflectionAnalyser->analyzeFqdn('App\\Controllers\\Api\\AuthController', Object(OpenApi\Analysis), [...])
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(393): OpenApi\Analysers\ReflectionAnalyser->fromFile('C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', Object(OpenApi\Context))
+ 9 VENDORPATH\zircote\swagger-php\src\Generator.php(390): OpenApi\Generator->scanSources(Object(Symfony\Component\Finder\Finder), Object(OpenApi\Analysis), Object(OpenApi\Context))
+10 VENDORPATH\zircote\swagger-php\src\Generator.php(356): OpenApi\Generator->scanSources([...], Object(OpenApi\Analysis), Object(OpenApi\Context))
+11 VENDORPATH\zircote\swagger-php\src\Generator.php(313): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+12 APPPATH\Controllers\DocController.php(12): OpenApi\Generator::scan([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocController->ConvertAnnotations()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocController))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci_shield-Api\\public\\index.php')
+CRITICAL - 2025-03-22 08:39:38 --> ErrorException: [Creation Error] An error occurred while instantiating the annotation @OA\Info declared on C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 18: "Ignoring unexpected property "Title" for @OA\Info(), expecting "x", "title", "description", "termsOfService", "contact", "license", "version" in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 18".; file=C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php
+[Method: GET, Route: download-Swagger]
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, '[Creation Error] An error occurred while instantiating the annotation @OA\\Info declared on C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18: "Ignoring unexpected property "Title" for @OA\\Info(), expecting "x", "title", "description", "termsOfService", "contact", "license", "version" in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', 'C:\\xampp\\htdocs\\ci_shield-Api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 23)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(23): trigger_error('[Creation Error] An error occurred while instantiating the annotation @OA\\Info declared on C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18: "Ignoring unexpected property "Title" for @OA\\Info(), expecting "x", "title", "description", "termsOfService", "contact", "license", "version" in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', 512)
+ 3 VENDORPATH\psr\log\src\LoggerTrait.php(50): OpenApi\Loggers\DefaultLogger->log('error', '[Creation Error] An error occurred while instantiating the annotation @OA\\Info declared on C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18: "Ignoring unexpected property "Title" for @OA\\Info(), expecting "x", "title", "description", "termsOfService", "contact", "license", "version" in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', [...])
+ 4 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockParser.php(78): Psr\Log\AbstractLogger->error('[Creation Error] An error occurred while instantiating the annotation @OA\\Info declared on C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18: "Ignoring unexpected property "Title" for @OA\\Info(), expecting "x", "title", "description", "termsOfService", "contact", "license", "version" in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 18".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', [...])
+ 5 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockAnnotationFactory.php(58): OpenApi\Analysers\DocBlockParser->fromComment('/**
+ * @OA\\Info(
+ *      Title="Shield v4 Api Docs",
+ *      version="1.0.0",
+ *      description="Api regarding Register,Login,Profile & Logout User"
+ * );
+ */', Object(OpenApi\Context))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(122): OpenApi\Analysers\DocBlockAnnotationFactory->build(Object(ReflectionClass), Object(OpenApi\Context))
+ 7 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(61): OpenApi\Analysers\ReflectionAnalyser->analyzeFqdn('App\\Controllers\\Api\\AuthController', Object(OpenApi\Analysis), [...])
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(393): OpenApi\Analysers\ReflectionAnalyser->fromFile('C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', Object(OpenApi\Context))
+ 9 VENDORPATH\zircote\swagger-php\src\Generator.php(390): OpenApi\Generator->scanSources(Object(Symfony\Component\Finder\Finder), Object(OpenApi\Analysis), Object(OpenApi\Context))
+10 VENDORPATH\zircote\swagger-php\src\Generator.php(356): OpenApi\Generator->scanSources([...], Object(OpenApi\Analysis), Object(OpenApi\Context))
+11 VENDORPATH\zircote\swagger-php\src\Generator.php(313): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+12 APPPATH\Controllers\DocController.php(12): OpenApi\Generator::scan([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocController->ConvertAnnotations()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocController))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci_shield-Api\\public\\index.php')
+CRITICAL - 2025-03-22 08:39:51 --> ErrorException: [Syntax Error] Expected Doctrine\Common\Annotations\DocLexer::T_CLOSE_PARENTHESIS, got '(' in \App\Controllers\Api\AuthController->registeruser() in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 31:26
+[Method: GET, Route: download-Swagger]
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, '[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'(\' in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 31:26', 'C:\\xampp\\htdocs\\ci_shield-Api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 23)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(23): trigger_error('[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'(\' in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 31:26', 512)
+ 3 VENDORPATH\psr\log\src\LoggerTrait.php(50): OpenApi\Loggers\DefaultLogger->log('error', '[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'(\' in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 31:26', [...])
+ 4 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockParser.php(76): Psr\Log\AbstractLogger->error('[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'(\' in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 31:26', [...])
+ 5 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockAnnotationFactory.php(58): OpenApi\Analysers\DocBlockParser->fromComment('/**
+     * @OA\\Post(
+     *      path="api/registeruser",
+     *      Summery="User Registration API",
+     * @OA\\RequestBody(
+     *      required=true,
+     * @OA\\JsonContent(
+     *      type="object",
+     *      @OA\\Propertiy( Property="name",type="string",example="Piyush"),
+     *      @OA\\Propertiy( Property="email",type="string",example="Piyush@gmail.com"),
+     *      @OA\\Propertiy( Property="username",type="string",example="Piyuu"),
+     *      @OA\\Propertiy( Property="Password",type="password",example="PA@123"),
+     *      @OA\\Propertiy( Property="gender",type="string",example="Male"),
+     *      @OA\\Propertiy( Property="Ph_no",type="string",example="7038001197"),
+     * )
+     * ),
+     * @OA\\Response(
+     *      response=200,
+     *      description="User Registered Successfull"
+     * )
+     * )
+     * 
+     */', Object(OpenApi\Context))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(135): OpenApi\Analysers\DocBlockAnnotationFactory->build(Object(ReflectionMethod), Object(OpenApi\Context))
+ 7 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(61): OpenApi\Analysers\ReflectionAnalyser->analyzeFqdn('App\\Controllers\\Api\\AuthController', Object(OpenApi\Analysis), [...])
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(393): OpenApi\Analysers\ReflectionAnalyser->fromFile('C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', Object(OpenApi\Context))
+ 9 VENDORPATH\zircote\swagger-php\src\Generator.php(390): OpenApi\Generator->scanSources(Object(Symfony\Component\Finder\Finder), Object(OpenApi\Analysis), Object(OpenApi\Context))
+10 VENDORPATH\zircote\swagger-php\src\Generator.php(356): OpenApi\Generator->scanSources([...], Object(OpenApi\Analysis), Object(OpenApi\Context))
+11 VENDORPATH\zircote\swagger-php\src\Generator.php(313): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+12 APPPATH\Controllers\DocController.php(12): OpenApi\Generator::scan([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocController->ConvertAnnotations()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocController))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci_shield-Api\\public\\index.php')
+CRITICAL - 2025-03-22 08:41:10 --> ErrorException: [Creation Error] An error occurred while instantiating the annotation @OA\Property declared on \App\Controllers\Api\AuthController->registeruser() in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \App\Controllers\Api\AuthController->registeruser() in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 46".; file=C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php
+[Method: GET, Route: download-Swagger]
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, '[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', 'C:\\xampp\\htdocs\\ci_shield-Api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 23)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(23): trigger_error('[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', 512)
+ 3 VENDORPATH\psr\log\src\LoggerTrait.php(50): OpenApi\Loggers\DefaultLogger->log('error', '[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', [...])
+ 4 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockParser.php(78): Psr\Log\AbstractLogger->error('[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', [...])
+ 5 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockAnnotationFactory.php(58): OpenApi\Analysers\DocBlockParser->fromComment('/**
+     * @OA\\Post(
+     *      path="api/registeruser",
+     *      Summery="User Registration API",
+     * @OA\\RequestBody(
+     *      required=true,
+     * @OA\\JsonContent(
+     *      type="object",
+     *      @OA\\Property( Property="name",type="string",example="Piyush"),
+     *      @OA\\Property( Property="email",type="string",example="Piyush@gmail.com"),
+     *      @OA\\Property( Property="username",type="string",example="Piyuu"),
+     *      @OA\\Property( Property="Password",type="password",example="PA@123"),
+     *      @OA\\Property( Property="gender",type="string",example="Male"),
+     *      @OA\\Property( Property="Ph_no",type="string",example="7038001197"),
+     * )
+     * ),
+     * @OA\\Response(
+     *      response=200,
+     *      description="User Registered Successfull"
+     * )
+     * )
+     * 
+     */', Object(OpenApi\Context))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(135): OpenApi\Analysers\DocBlockAnnotationFactory->build(Object(ReflectionMethod), Object(OpenApi\Context))
+ 7 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(61): OpenApi\Analysers\ReflectionAnalyser->analyzeFqdn('App\\Controllers\\Api\\AuthController', Object(OpenApi\Analysis), [...])
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(393): OpenApi\Analysers\ReflectionAnalyser->fromFile('C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', Object(OpenApi\Context))
+ 9 VENDORPATH\zircote\swagger-php\src\Generator.php(390): OpenApi\Generator->scanSources(Object(Symfony\Component\Finder\Finder), Object(OpenApi\Analysis), Object(OpenApi\Context))
+10 VENDORPATH\zircote\swagger-php\src\Generator.php(356): OpenApi\Generator->scanSources([...], Object(OpenApi\Analysis), Object(OpenApi\Context))
+11 VENDORPATH\zircote\swagger-php\src\Generator.php(313): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+12 APPPATH\Controllers\DocController.php(12): OpenApi\Generator::scan([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocController->ConvertAnnotations()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocController))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci_shield-Api\\public\\index.php')
+CRITICAL - 2025-03-22 08:41:20 --> ErrorException: [Syntax Error] Expected Doctrine\Common\Annotations\DocLexer::T_CLOSE_PARENTHESIS, got '(' in \App\Controllers\Api\AuthController->registeruser() in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 31:26
+[Method: GET, Route: download-Swagger]
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, '[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'(\' in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 31:26', 'C:\\xampp\\htdocs\\ci_shield-Api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 23)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(23): trigger_error('[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'(\' in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 31:26', 512)
+ 3 VENDORPATH\psr\log\src\LoggerTrait.php(50): OpenApi\Loggers\DefaultLogger->log('error', '[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'(\' in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 31:26', [...])
+ 4 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockParser.php(76): Psr\Log\AbstractLogger->error('[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'(\' in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 31:26', [...])
+ 5 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockAnnotationFactory.php(58): OpenApi\Analysers\DocBlockParser->fromComment('/**
+     * @OA\\Post(
+     *      path="api/registeruser",
+     *      Summery="User Registration API",
+     * @OA\\RequestBody(
+     *      required=true,
+     * @OA\\JsonContent(
+     *      type="object",
+     *      @OA\\Propertiy( Property="name",type="string",example="Piyush"),
+     *      @OA\\Propertiy( Property="email",type="string",example="Piyush@gmail.com"),
+     *      @OA\\Propertiy( Property="username",type="string",example="Piyuu"),
+     *      @OA\\Propertiy( Property="Password",type="password",example="PA@123"),
+     *      @OA\\Propertiy( Property="gender",type="string",example="Male"),
+     *      @OA\\Propertiy( Property="Ph_no",type="string",example="7038001197"),
+     * )
+     * ),
+     * @OA\\Response(
+     *      response=200,
+     *      description="User Registered Successfull"
+     * )
+     * )
+     * 
+     */', Object(OpenApi\Context))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(135): OpenApi\Analysers\DocBlockAnnotationFactory->build(Object(ReflectionMethod), Object(OpenApi\Context))
+ 7 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(61): OpenApi\Analysers\ReflectionAnalyser->analyzeFqdn('App\\Controllers\\Api\\AuthController', Object(OpenApi\Analysis), [...])
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(393): OpenApi\Analysers\ReflectionAnalyser->fromFile('C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', Object(OpenApi\Context))
+ 9 VENDORPATH\zircote\swagger-php\src\Generator.php(390): OpenApi\Generator->scanSources(Object(Symfony\Component\Finder\Finder), Object(OpenApi\Analysis), Object(OpenApi\Context))
+10 VENDORPATH\zircote\swagger-php\src\Generator.php(356): OpenApi\Generator->scanSources([...], Object(OpenApi\Analysis), Object(OpenApi\Context))
+11 VENDORPATH\zircote\swagger-php\src\Generator.php(313): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+12 APPPATH\Controllers\DocController.php(12): OpenApi\Generator::scan([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocController->ConvertAnnotations()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocController))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci_shield-Api\\public\\index.php')
+CRITICAL - 2025-03-22 08:41:57 --> ErrorException: [Syntax Error] Expected Doctrine\Common\Annotations\DocLexer::T_CLOSE_PARENTHESIS, got '(' in \App\Controllers\Api\AuthController->registeruser() in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 31:26
+[Method: GET, Route: download-Swagger]
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, '[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'(\' in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 31:26', 'C:\\xampp\\htdocs\\ci_shield-Api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 23)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(23): trigger_error('[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'(\' in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 31:26', 512)
+ 3 VENDORPATH\psr\log\src\LoggerTrait.php(50): OpenApi\Loggers\DefaultLogger->log('error', '[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'(\' in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 31:26', [...])
+ 4 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockParser.php(76): Psr\Log\AbstractLogger->error('[Syntax Error] Expected Doctrine\\Common\\Annotations\\DocLexer::T_CLOSE_PARENTHESIS, got \'(\' in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 31:26', [...])
+ 5 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockAnnotationFactory.php(58): OpenApi\Analysers\DocBlockParser->fromComment('/**
+     * @OA\\Post(
+     *      path="api/registeruser",
+     *      Summery="User Registration API",
+     * @OA\\RequestBody(
+     *      required=true,
+     * @OA\\JsonContent(
+     *      type="object",
+     *      @OA\\Propertiy( Property="name",type="string",example="Piyush"),
+     *      @OA\\Propertiy( Property="email",type="string",example="Piyush@gmail.com"),
+     *      @OA\\Propertiy( Property="username",type="string",example="Piyuu"),
+     *      @OA\\Propertiy( Property="Password",type="password",example="PA@123"),
+     *      @OA\\Propertiy( Property="gender",type="string",example="Male"),
+     *      @OA\\Propertiy( Property="Ph_no",type="string",example="7038001197"),
+     * )
+     * ),
+     * @OA\\Response(
+     *      response=200,
+     *      description="User Registered Successfull"
+     * )
+     * );
+     * 
+     */', Object(OpenApi\Context))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(135): OpenApi\Analysers\DocBlockAnnotationFactory->build(Object(ReflectionMethod), Object(OpenApi\Context))
+ 7 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(61): OpenApi\Analysers\ReflectionAnalyser->analyzeFqdn('App\\Controllers\\Api\\AuthController', Object(OpenApi\Analysis), [...])
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(393): OpenApi\Analysers\ReflectionAnalyser->fromFile('C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', Object(OpenApi\Context))
+ 9 VENDORPATH\zircote\swagger-php\src\Generator.php(390): OpenApi\Generator->scanSources(Object(Symfony\Component\Finder\Finder), Object(OpenApi\Analysis), Object(OpenApi\Context))
+10 VENDORPATH\zircote\swagger-php\src\Generator.php(356): OpenApi\Generator->scanSources([...], Object(OpenApi\Analysis), Object(OpenApi\Context))
+11 VENDORPATH\zircote\swagger-php\src\Generator.php(313): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+12 APPPATH\Controllers\DocController.php(12): OpenApi\Generator::scan([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocController->ConvertAnnotations()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocController))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci_shield-Api\\public\\index.php')
+CRITICAL - 2025-03-22 08:43:01 --> ErrorException: [Creation Error] An error occurred while instantiating the annotation @OA\Property declared on \App\Controllers\Api\AuthController->registeruser() in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \App\Controllers\Api\AuthController->registeruser() in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 46".; file=C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php
+[Method: GET, Route: download-Swagger]
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, '[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', 'C:\\xampp\\htdocs\\ci_shield-Api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 23)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(23): trigger_error('[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', 512)
+ 3 VENDORPATH\psr\log\src\LoggerTrait.php(50): OpenApi\Loggers\DefaultLogger->log('error', '[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', [...])
+ 4 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockParser.php(78): Psr\Log\AbstractLogger->error('[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', [...])
+ 5 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockAnnotationFactory.php(58): OpenApi\Analysers\DocBlockParser->fromComment('/**
+     * @OA\\Post(
+     *      path="api/registeruser",
+     *      Summery="User Registration API",
+     * @OA\\RequestBody(
+     *      required=true,
+     * @OA\\JsonContent(
+     *      type="object",
+     *      @OA\\Property( Property="name",type="string",example="Piyush"),
+     *      @OA\\Property( Property="email",type="string",example="Piyush@gmail.com"),
+     *      @OA\\Property( Property="username",type="string",example="Piyuu"),
+     *      @OA\\Property( Property="Password",type="password",example="PA@123"),
+     *      @OA\\Property( Property="gender",type="string",example="Male"),
+     *      @OA\\Property( Property="Ph_no",type="string",example="7038001197"),
+     * )
+     * ),
+     * @OA\\Response(
+     *      response=200,
+     *      description="User Registered Successfull"
+     * )
+     * );
+     * 
+     */', Object(OpenApi\Context))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(135): OpenApi\Analysers\DocBlockAnnotationFactory->build(Object(ReflectionMethod), Object(OpenApi\Context))
+ 7 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(61): OpenApi\Analysers\ReflectionAnalyser->analyzeFqdn('App\\Controllers\\Api\\AuthController', Object(OpenApi\Analysis), [...])
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(393): OpenApi\Analysers\ReflectionAnalyser->fromFile('C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', Object(OpenApi\Context))
+ 9 VENDORPATH\zircote\swagger-php\src\Generator.php(390): OpenApi\Generator->scanSources(Object(Symfony\Component\Finder\Finder), Object(OpenApi\Analysis), Object(OpenApi\Context))
+10 VENDORPATH\zircote\swagger-php\src\Generator.php(356): OpenApi\Generator->scanSources([...], Object(OpenApi\Analysis), Object(OpenApi\Context))
+11 VENDORPATH\zircote\swagger-php\src\Generator.php(313): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+12 APPPATH\Controllers\DocController.php(12): OpenApi\Generator::scan([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocController->ConvertAnnotations()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocController))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci_shield-Api\\public\\index.php')
+CRITICAL - 2025-03-22 08:43:33 --> ErrorException: [Creation Error] An error occurred while instantiating the annotation @OA\Property declared on \App\Controllers\Api\AuthController->registeruser() in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \App\Controllers\Api\AuthController->registeruser() in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 46".; file=C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php
+[Method: GET, Route: download-Swagger]
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, '[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', 'C:\\xampp\\htdocs\\ci_shield-Api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 23)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(23): trigger_error('[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', 512)
+ 3 VENDORPATH\psr\log\src\LoggerTrait.php(50): OpenApi\Loggers\DefaultLogger->log('error', '[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', [...])
+ 4 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockParser.php(78): Psr\Log\AbstractLogger->error('[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->registeruser() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 46".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', [...])
+ 5 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockAnnotationFactory.php(58): OpenApi\Analysers\DocBlockParser->fromComment('/**
+     * @OA\\Post(
+     *      path="api/registeruser",
+     *      Summery="User Registration API",
+     * @OA\\RequestBody(
+     *      required=true,
+     * @OA\\JsonContent(
+     *      type="object",
+     *      @OA\\Property( Property="name",type="string",example="Piyush"),
+     *      @OA\\Property( Property="email",type="string",example="Piyush@gmail.com"),
+     *      @OA\\Property( Property="username",type="string",example="Piyuu"),
+     *      @OA\\Property( Property="Password",type="password",example="PA@123"),
+     *      @OA\\Property( Property="gender",type="string",example="Male"),
+     *      @OA\\Property( Property="Ph_no",type="string",example="7038001197"),
+     * )
+     * ),
+     * @OA\\Response(
+     *      response=200,
+     *      description="User Registered Successfull"
+     * )
+     * )
+     * 
+     */', Object(OpenApi\Context))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(135): OpenApi\Analysers\DocBlockAnnotationFactory->build(Object(ReflectionMethod), Object(OpenApi\Context))
+ 7 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(61): OpenApi\Analysers\ReflectionAnalyser->analyzeFqdn('App\\Controllers\\Api\\AuthController', Object(OpenApi\Analysis), [...])
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(393): OpenApi\Analysers\ReflectionAnalyser->fromFile('C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', Object(OpenApi\Context))
+ 9 VENDORPATH\zircote\swagger-php\src\Generator.php(390): OpenApi\Generator->scanSources(Object(Symfony\Component\Finder\Finder), Object(OpenApi\Analysis), Object(OpenApi\Context))
+10 VENDORPATH\zircote\swagger-php\src\Generator.php(356): OpenApi\Generator->scanSources([...], Object(OpenApi\Analysis), Object(OpenApi\Context))
+11 VENDORPATH\zircote\swagger-php\src\Generator.php(313): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+12 APPPATH\Controllers\DocController.php(12): OpenApi\Generator::scan([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocController->ConvertAnnotations()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocController))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci_shield-Api\\public\\index.php')
+CRITICAL - 2025-03-22 08:46:01 --> ErrorException: [Creation Error] An error occurred while instantiating the annotation @OA\Property declared on \App\Controllers\Api\AuthController->login() in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 124: "Ignoring unexpected property "Property" for @OA\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \App\Controllers\Api\AuthController->login() in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 124".; file=C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php
+[Method: GET, Route: download-Swagger]
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, '[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->login() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 124: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->login() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 124".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', 'C:\\xampp\\htdocs\\ci_shield-Api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 23)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(23): trigger_error('[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->login() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 124: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->login() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 124".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', 512)
+ 3 VENDORPATH\psr\log\src\LoggerTrait.php(50): OpenApi\Loggers\DefaultLogger->log('error', '[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->login() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 124: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->login() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 124".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', [...])
+ 4 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockParser.php(78): Psr\Log\AbstractLogger->error('[Creation Error] An error occurred while instantiating the annotation @OA\\Property declared on \\App\\Controllers\\Api\\AuthController->login() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 124: "Ignoring unexpected property "Property" for @OA\\Property(), expecting "x", "ref", "schema", "title", "description", "maxProperties", "minProperties", "required", "properties", "type", "format", "items", "collectionFormat", "default", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "maxItems", "minItems", "uniqueItems", "enum", "multipleOf", "discriminator", "readOnly", "writeOnly", "xml", "externalDocs", "example", "examples", "nullable", "deprecated", "allOf", "anyOf", "oneOf", "not", "additionalProperties", "additionalItems", "contains", "patternProperties", "dependencies", "propertyNames", "const", "property" in \\App\\Controllers\\Api\\AuthController->login() in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 124".; file=C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', [...])
+ 5 VENDORPATH\zircote\swagger-php\src\Analysers\DocBlockAnnotationFactory.php(58): OpenApi\Analysers\DocBlockParser->fromComment('/**
+     * @OA\\Post(
+     *      path="api/login",
+     *      Summery="User Login API",
+     * @OA\\RequestBody(
+     *      required=true,
+     * @OA\\JsonContent(
+     *      type="object",
+     *      
+     *      @OA\\Property( Property="email",type="string",example="Piyush@gmail.com"),
+     *      @OA\\Property( Property="Password",type="password",example="PA@123"),
+     *      
+     * )
+     * ),
+     * @OA\\Response(
+     *      response=200,
+     *      description="User Login Successfull"
+     * )
+     * )
+     * 
+     */', Object(OpenApi\Context))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(135): OpenApi\Analysers\DocBlockAnnotationFactory->build(Object(ReflectionMethod), Object(OpenApi\Context))
+ 7 VENDORPATH\zircote\swagger-php\src\Analysers\ReflectionAnalyser.php(61): OpenApi\Analysers\ReflectionAnalyser->analyzeFqdn('App\\Controllers\\Api\\AuthController', Object(OpenApi\Analysis), [...])
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(393): OpenApi\Analysers\ReflectionAnalyser->fromFile('C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php', Object(OpenApi\Context))
+ 9 VENDORPATH\zircote\swagger-php\src\Generator.php(390): OpenApi\Generator->scanSources(Object(Symfony\Component\Finder\Finder), Object(OpenApi\Analysis), Object(OpenApi\Context))
+10 VENDORPATH\zircote\swagger-php\src\Generator.php(356): OpenApi\Generator->scanSources([...], Object(OpenApi\Analysis), Object(OpenApi\Context))
+11 VENDORPATH\zircote\swagger-php\src\Generator.php(313): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+12 APPPATH\Controllers\DocController.php(12): OpenApi\Generator::scan([...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocController->ConvertAnnotations()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocController))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci_shield-Api\\public\\index.php')
+DEBUG - 2025-03-22 08:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 08:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-22 08:52:51 --> ErrorException: Unexpected @OA\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\Components in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 27
+[Method: GET, Route: download-Swagger]
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, 'Unexpected @OA\\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\\Components in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 27', 'C:\\xampp\\htdocs\\ci_shield-Api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 23)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(23): trigger_error('Unexpected @OA\\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\\Components in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 27', 512)
+ 3 VENDORPATH\psr\log\src\LoggerTrait.php(61): OpenApi\Loggers\DefaultLogger->log('warning', 'Unexpected @OA\\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\\Components in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 27', [])
+ 4 VENDORPATH\zircote\swagger-php\src\Annotations\AbstractAnnotation.php(473): Psr\Log\AbstractLogger->warning('Unexpected @OA\\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\\Components in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 27')
+ 5 VENDORPATH\zircote\swagger-php\src\Annotations\OpenApi.php(170): OpenApi\Annotations\AbstractAnnotation->validate([], [], '#', Object(stdClass))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysis.php(423): OpenApi\Annotations\OpenApi->validate()
+ 7 VENDORPATH\zircote\swagger-php\src\Generator.php(370): OpenApi\Analysis->validate()
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(313): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+ 9 APPPATH\Controllers\DocController.php(12): OpenApi\Generator::scan([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocController->ConvertAnnotations()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci_shield-Api\\public\\index.php')
+CRITICAL - 2025-03-22 08:53:18 --> ErrorException: Unexpected @OA\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\Components in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 27
+[Method: GET, Route: download-Swagger]
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, 'Unexpected @OA\\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\\Components in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 27', 'C:\\xampp\\htdocs\\ci_shield-Api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 23)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(23): trigger_error('Unexpected @OA\\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\\Components in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 27', 512)
+ 3 VENDORPATH\psr\log\src\LoggerTrait.php(61): OpenApi\Loggers\DefaultLogger->log('warning', 'Unexpected @OA\\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\\Components in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 27', [])
+ 4 VENDORPATH\zircote\swagger-php\src\Annotations\AbstractAnnotation.php(473): Psr\Log\AbstractLogger->warning('Unexpected @OA\\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\\Components in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 27')
+ 5 VENDORPATH\zircote\swagger-php\src\Annotations\OpenApi.php(170): OpenApi\Annotations\AbstractAnnotation->validate([], [], '#', Object(stdClass))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysis.php(423): OpenApi\Annotations\OpenApi->validate()
+ 7 VENDORPATH\zircote\swagger-php\src\Generator.php(370): OpenApi\Analysis->validate()
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(313): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+ 9 APPPATH\Controllers\DocController.php(12): OpenApi\Generator::scan([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocController->ConvertAnnotations()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci_shield-Api\\public\\index.php')
+CRITICAL - 2025-03-22 08:53:25 --> ErrorException: Unexpected @OA\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\Components in C:\xampp\htdocs\ci_shield-Api\app\Controllers\Api\AuthController.php on line 27
+[Method: GET, Route: download-Swagger]
+in VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(512, 'Unexpected @OA\\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\\Components in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 27', 'C:\\xampp\\htdocs\\ci_shield-Api\\vendor\\zircote\\swagger-php\\src\\Loggers\\DefaultLogger.php', 23)
+ 2 VENDORPATH\zircote\swagger-php\src\Loggers\DefaultLogger.php(23): trigger_error('Unexpected @OA\\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\\Components in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 27', 512)
+ 3 VENDORPATH\psr\log\src\LoggerTrait.php(61): OpenApi\Loggers\DefaultLogger->log('warning', 'Unexpected @OA\\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\\Components in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 27', [])
+ 4 VENDORPATH\zircote\swagger-php\src\Annotations\AbstractAnnotation.php(473): Psr\Log\AbstractLogger->warning('Unexpected @OA\\SecurityScheme(securityScheme="bearerAuth"), expected to be inside @OA\\Components in C:\\xampp\\htdocs\\ci_shield-Api\\app\\Controllers\\Api\\AuthController.php on line 27')
+ 5 VENDORPATH\zircote\swagger-php\src\Annotations\OpenApi.php(170): OpenApi\Annotations\AbstractAnnotation->validate([], [], '#', Object(stdClass))
+ 6 VENDORPATH\zircote\swagger-php\src\Analysis.php(423): OpenApi\Annotations\OpenApi->validate()
+ 7 VENDORPATH\zircote\swagger-php\src\Generator.php(370): OpenApi\Analysis->validate()
+ 8 VENDORPATH\zircote\swagger-php\src\Generator.php(313): OpenApi\Generator->generate([...], Object(OpenApi\Analysis), true)
+ 9 APPPATH\Controllers\DocController.php(12): OpenApi\Generator::scan([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocController->ConvertAnnotations()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci_shield-Api\\public\\index.php')
+DEBUG - 2025-03-22 08:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 08:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 10:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-03-22 10:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
